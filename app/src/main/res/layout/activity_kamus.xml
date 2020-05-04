@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/title"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="left"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:gravity="left"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="20sp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Kosa Kata Penting Dalam Bahasa Arab"/>
+
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/tv1"
+                    android:textAlignment="center"
+                    android:fontFamily="casual"
+                    android:textColor="#fff"
+                    android:textSize="14dp"
+                    android:textColorHint="#3AB77D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et1"
+                    android:hint="Arti Kata Bahasa Arab"/>
+
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/et1"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="14dp"
+                    android:fontFamily="casual"
+                    android:textColorHint="#3AB77D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et2"
+                    android:hint="Pengucapan"/>
+            </RelativeLayout>
+
+    <GridLayout
+        android:layout_below="@+id/title"
+        android:layout_marginTop="20dp"
+        android:columnCount="2"
+        android:rowCount="6"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/kt1"
+            android:background="@drawable/splash"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="14dp">
+
+            <LinearLayout
+                android:background="#fff"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/kat1"
+                    android:background="@drawable/rounded"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Terbaik"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/kt2"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="12dp">
+
+            <LinearLayout
+                android:background="#fff"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/kat2"
+                    android:background="@drawable/rounded"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Kemeja"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/kt3"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="12dp">
+
+            <LinearLayout
+                android:background="#fff"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/kat3"
+                    android:background="@drawable/rounded"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Udara"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/kt4"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="12dp">
+
+            <LinearLayout
+                android:background="#fff"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/kat4"
+                    android:background="@drawable/rounded"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Buku"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/kt5"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="12dp">
+
+            <LinearLayout
+                android:background="#fff"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/kat5"
+                    android:background="@drawable/rounded"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Faham"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/kt6"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_columnWeight="2"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="12dp">
+
+            <LinearLayout
+                android:background="#fff"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/kat6"
+                    android:background="@drawable/rounded"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Terlambat"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>
